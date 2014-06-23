@@ -23,11 +23,12 @@ You could, for example:
     function createEls(txt, idx){
     	var el= document.createElement('div');
     	el.innerHTML= txt;
-         // if you added it to Element.prototype
+        // if you added it to Element.prototype
     	container.appendToIndex(el, idx);
-         // otherwise
-         appendToIndex(el, container, idx);
+        // otherwise
+        appendToIndex(el, container, idx);
     }
+
     createEls('N', 14);
     createEls('A', 1);
     createEls('C', 3);
