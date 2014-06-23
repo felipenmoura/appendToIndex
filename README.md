@@ -55,3 +55,7 @@ You could, for example:
     createEls('U', 21);
     createEls('R', 18);
 ```
+
+### Demo
+
+See a running example [here](http://felipenmoura.github.io/appendToIndex/).
