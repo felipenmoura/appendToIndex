@@ -1,0 +1,65 @@
+<!doctype>
+<html lang="en-US">
+	<head>
+		<title>appendToIndex Demo</title>
+
+		<script src="src/append-to-index.js"></script>
+
+		<style type='text/css'>
+			#container { min-height: 30px; background: #f90; }
+			#container div { width: 30px; border: solid 1px black; text-align: center; float: left; margin: 5px; }
+		</style>
+
+	</head>
+	<body>
+		<div id='container'></div>
+
+		<script>
+
+			appendToIndex.setAsProto();
+
+			var container= document.getElementById('container'),
+				timer= 0;
+
+			function createEls(txt, idx){
+				var el= document.createElement('div');
+				el.innerHTML= txt;
+
+				timer++;
+
+				setTimeout(function(){
+					container.appendToIndex(el, idx);
+				}, timer * 200);
+			}
+
+			createEls('N', 14);
+			createEls('A', 1);
+			createEls('C', 3);
+			createEls('B', 2);
+			createEls('E', 5);
+			createEls('T', 20);
+			createEls('H', 8);
+			createEls('D', 4);
+			createEls('V', 22);
+			createEls('F', 6);
+			createEls('J', 10);
+			createEls('I', 9);
+			createEls('L', 12);
+			createEls('O', 15);
+			createEls('M', 13);
+			createEls('K', 11);
+			createEls('P', 16);
+			createEls('W', 25);
+			createEls('Y', 24);
+			createEls('Q', 17);
+			createEls('G', 7);
+			createEls('Z', 26);
+			createEls('S', 19);
+			createEls('X', 23);
+			createEls('U', 21);
+			createEls('R', 18);
+
+		</script>
+
+	</body>
+</html>
